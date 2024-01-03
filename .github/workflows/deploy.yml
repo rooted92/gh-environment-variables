@@ -8,6 +8,7 @@ env:
   MONGODB_DB_NAME: gha-demo # this is a key-value pair, used for the mongodb service
 jobs:
   test:
+    environment: testing
     env:
       MONGODB_CLUSTER_ADDRESS: clusteractions.h3ydhlj.mongodb.net/
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
